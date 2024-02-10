@@ -1,0 +1,127 @@
+{
+	"BarData" : [
+    {
+      "label": "Monday",
+			"Value": 10000
+    },
+		{
+			"label": "Tuesday",
+			"Value": 5000
+		},
+		{
+		"label": "Wednesday",
+		"Value": 8000
+		},
+		{
+			"label": "Thursday",
+			"Value": 10000
+		},
+		{
+			"label": "Friday",
+			"Value": 7000
+		}
+	],
+	"tableData" : [
+		{
+			"ResourceId" : 12131,
+			"Days": "Monday",
+			"Metrics": 31000,
+			"AllocationId": "#131012"
+		},		{
+			"ResourceId" : 12130,
+			"Days": "Friday",
+			"Metrics": 25300,
+			"AllocationId": "#143012"
+		},		{
+			"ResourceId" : 12129,
+			"Days": "Thursday",
+			"Metrics": 29000,
+			"AllocationId": "#129312"
+		},		{
+			"ResourceId" : 12128,
+			"Days": "Wednesday",
+			"Metrics": 82000,
+			"AllocationId": "#148212"
+		},		{
+			"ResourceId" : 12127,
+			"Days": "Tuesday",
+			"Metrics": 90000,
+			"AllocationId": "#721312"
+		},		{
+			"ResourceId" : 12126,
+			"Days": "Monday",
+			"Metrics": 62000,
+			"AllocationId": "#621312"
+		},		{
+			"ResourceId" : 12125,
+			"Days": "Friday",
+			"Metrics": 25000,
+			"AllocationId": "#251312"
+		},		{
+			"ResourceId" : 12124,
+			"Days": "Thursday",
+			"Metrics": 24000,
+			"AllocationId": "#241312"
+		},		{
+			"ResourceId" : 12123,
+			"Days": "Wednesday",
+			"Metrics": 89700,
+			"AllocationId": "#897312"
+		},		{
+			"ResourceId" : 12122,
+			"Days": "Tuesday",
+			"Metrics": 43000,
+			"AllocationId": "#431312"
+		},		{
+			"ResourceId" : 12121,
+			"Days": "Monday",
+			"Metrics": 25050,
+			"AllocationId": "#141010"
+		},		{
+			"ResourceId" : 12120,
+			"Days": "Friday",
+			"Metrics": 20000,
+			"AllocationId": "#191312"
+		},		{
+			"ResourceId" : 12119,
+			"Days": "Thursday",
+			"Metrics": 87000,
+			"AllocationId": "#151312"
+		},		{
+			"ResourceId" : 12118,
+			"Days": "Wednesday",
+			"Metrics": 18000,
+			"AllocationId": "#141812"
+		},		{
+			"ResourceId" : 12117,
+			"Days": "Tuesday",
+			"Metrics": 30000,
+			"AllocationId": "#141311"
+		},		{
+			"ResourceId" : 12116,
+			"Days": "Monday",
+			"Metrics": 12000,
+			"AllocationId": "#141310"
+		},		{
+			"ResourceId" : 12115,
+			"Days": "Friday",
+			"Metrics": 1000,
+			"AllocationId": "#141317"
+		},		{
+			"ResourceId" : 12114,
+			"Days": "Thursday",
+			"Metrics": 15000,
+			"AllocationId": "#141318"
+		},		{
+			"ResourceId" : 12113,
+			"Days": "Wednesday",
+			"Metrics": 2500,
+			"AllocationId": "#143312"
+		},		{
+			"ResourceId" : 12112,
+			"Days": "Tuesday",
+			"Metrics": 5000,
+			"AllocationId": "#141313"
+		}
+	]
+}

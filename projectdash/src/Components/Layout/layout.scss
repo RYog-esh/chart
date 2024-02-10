@@ -1,0 +1,85 @@
+.options-section {
+    background-color: #38cfb4;
+    height: 100vh;
+		position: relative;
+		.rightArrowParent {
+			position: relative;
+			.rightArrow {
+				position: absolute;
+				right: 5px;
+			}
+		}
+		.options-div {
+			position: absolute;
+			width: 90%;
+			height: 100px;
+			top:0;
+			bottom:0;
+			left:0;
+			right:0;
+			margin: auto;
+			p {
+				font-size: 16px;
+				color: #fff;
+				margin-bottom: 10px;
+				border-radius: 15px;
+				padding: .3rem;
+				cursor: pointer;
+				&.active{
+				background-color: #4e9d8e;
+				}
+			}
+		}
+}
+.dashboard-section {
+		padding: 3rem;
+		h3 {
+			text-align: left;
+		}
+		.divs {
+			margin-top: 2rem;
+			h4 {
+				font-size: 18px;
+				text-align: left;
+				padding: 0 0 1.5rem .5rem;
+			}
+		}
+		.boxShadow {
+			-webkit-box-shadow: 0px 2px 23px -10px rgba(0,0,0,0.75);
+			-moz-box-shadow: 0px 2px 23px -10px rgba(0,0,0,0.75);
+			box-shadow: 0px 2px 23px -10px rgba(0,0,0,0.75);
+			border-radius: 15px;
+			padding: 1rem;
+			height: 300px;
+		}
+		.viewMore {
+			border:1px solid #eee;
+			border-radius: 15px;
+			-webkit-box-shadow: 0px 2px 23px -10px rgba(0,0,0,0.75);
+			-moz-box-shadow: 0px 2px 23px -10px rgba(0,0,0,0.75);
+			box-shadow: 0px 2px 23px -10px rgba(0,0,0,0.75);
+			text-align: left;
+			padding: 1rem 0;
+			p {
+				margin: 0;
+				padding: .5rem 1rem;
+				font-size: 14px;
+				color: #7e848f;
+			}
+			h5{
+				padding-left: 1rem;
+			}
+			.cta {
+				padding-top: 0;
+				font-size: 12px;
+				font-weight: bold;
+				color: #222;
+				span {
+					padding-left: .5rem;
+				}
+			}
+		}
+		.pad-mar {
+			margin-top: 3rem;
+		}
+}

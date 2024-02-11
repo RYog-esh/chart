@@ -2,11 +2,15 @@
     background-color: #38cfb4;
     height: 100vh;
 		position: relative;
+		text-align: left;
 		.rightArrowParent {
 			position: relative;
 			.rightArrow {
 				position: absolute;
 				right: 5px;
+				svg {
+					width : 7px;
+				}
 			}
 		}
 		.options-div {
@@ -23,15 +27,31 @@
 				color: #fff;
 				margin-bottom: 10px;
 				border-radius: 15px;
-				padding: .3rem;
+				padding: 0.3rem 0.3rem 0.3rem 1rem;
 				cursor: pointer;
 				&.active{
 				background-color: #4e9d8e;
 				}
 			}
+			svg {
+				padding-right: 0.5rem;
+			}
+			p.analysisOptions {
+				margin: 0;
+			}
 		}
 }
 .dashboard-section {
+		.downloadReport {
+			text-align: right;
+			span {
+				padding: 0.6rem;
+				border-radius: 15px;
+				background: #6366f1;
+				color: #fff;
+				cursor: pointer;
+			}
+		}
 		padding: 3rem;
 		h3 {
 			text-align: left;

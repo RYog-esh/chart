@@ -5,7 +5,15 @@ import Col from 'react-bootstrap/Col';
 import './layout.scss';
 import MetricsBarChart from '../BarChart/MetricsBarChart';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGreaterThan, faArrowRightLong } from '@fortawesome/free-solid-svg-icons'
+import { 
+	faGreaterThan,
+	faArrowRightLong,
+	faDownload,
+	faTableColumns,
+	faMagnifyingGlassChart,
+	faPlus,
+	faBookmark
+} from '@fortawesome/free-solid-svg-icons'
 import TableData from '../Tabledata/TableData';
 //import { useSelector } from 'react-redux';
 
@@ -28,13 +36,13 @@ const Layout = (props) => {
             <Row>
                 <Col md='2' className='options-section'>
 									<div className='options-div'>
-										<p className= 'active' onClick={showDashboardClick}>Dashboard</p>
-										<p className='rightArrowParent' onClick={showAnalysisClick}>Analysis <span className='rightArrow'> <FontAwesomeIcon icon={faGreaterThan} /> </span></p>
+										<p className= 'active' onClick={showDashboardClick}> <FontAwesomeIcon icon={faTableColumns} /> Dashboard</p>
+										<p className='rightArrowParent' onClick={showAnalysisClick}> <FontAwesomeIcon icon={faMagnifyingGlassChart} /> Analysis <span className='rightArrow'> <FontAwesomeIcon icon={faGreaterThan} /> </span></p>
 										{
 											showAnalysis && 
 											<>
-												<p>Add a Connection</p>
-												<p>Saved Connection</p>
+												<p className='analysisOptions'> <FontAwesomeIcon icon={faPlus} /> Add a Connection</p>
+												<p className='analysisOptions'> <FontAwesomeIcon icon={faBookmark} /> Saved Connection</p>
 											</>
 										}
 									</div>
@@ -43,7 +51,14 @@ const Layout = (props) => {
 									{
 										showDashboard && 
 											<>
+												<Row>
+												<Col md='6'>
 												<h3>Dashboard</h3>
+												</Col>
+												<Col md='6' className='downloadReport'>
+												<span> <FontAwesomeIcon icon={faDownload} /> Download Report</span>
+												</Col>
+												</Row>
 												<Col md='12' className='divs'>
 													<Row>
 														{

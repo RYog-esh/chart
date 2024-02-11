@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { chart } from 'chart.js/auto';
-import { Bar, getElementAtEvent } from 'react-chartjs-2';
+import { Bar, getElementAtEvent, getDatasetAtEvent } from 'react-chartjs-2';
 import chartdatas from '../chartdatas.json'
 import { useRef } from 'react';
 // import { useDispatch } from 'react-redux';
@@ -10,15 +10,16 @@ const MetricsBarChart = () => {
   // const dispatch = useDispatch();
   // const [barVal, setBarVal] = useState('');
   const chartRef = useRef();
-  const barClick = (e) => { debugger;
+  const barClick = (e) => {
     //const charts = chart.getChart(chartRef.current);
     //const clickedElements = chart.getElementsAtEventForMode(e, 'y',{axis: 'x', intersect: false}, true)
-    if(getElementAtEvent(chartRef.current, e).length > 0){
-      const getBarVal = getElementAtEvent(chartRef.current, e)[0];
-      //console.log(getElementsAtEventForMode(e, 'y',{axis: 'x', intersect: false}, true));
-      //setBarVal(getBarVal);
-      //dispatch(getBarData(barVal))
-    }
+    // if(getElementAtEvent(chartRef.current, e).length > 0){
+    //   const getBarVal = getElementAtEvent(chartRef.current, e)[0];
+    //   //console.log(getElementsAtEventForMode(e, 'y',{axis: 'x', intersect: false}, true));
+    //   //setBarVal(getBarVal);
+    //   //dispatch(getBarData(barVal))
+    // }
+    //console.log('barClick', getDatasetAtEvent(chartRef.current, e));
   }
   return (
     <div className='bar-chart'>
@@ -27,7 +28,11 @@ const MetricsBarChart = () => {
             ref = {chartRef}
             data={
 							{
-								labels : chartdatas.BarData.map((labelData, i) => labelData.label),
+								labels : chartdatas.BarData.map((labelData, i) => {
+                  return(
+                    labelData.label
+                  )
+                }),
 								datasets:[
 									{
 										label: "Allocation per day",
